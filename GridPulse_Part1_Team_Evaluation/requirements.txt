@@ -1,0 +1,13 @@
+# GridPulse Part 1 — Three-Team PySpark Algorithm Evaluation
+# Tested on Python 3.12.10, Java 17 (17.0.12 LTS), Windows 10/11 64-bit
+pyspark>=4.0.0
+py4j>=0.10.9.7
+pyarrow>=20.0.0
+numpy>=2.0.0
+pandas>=2.2.0
+matplotlib>=3.9.0
+seaborn>=0.13.0
+nbformat>=5.10.0
+nbclient>=0.10.0
+nbconvert>=7.16.0
+ipykernel>=6.29.0

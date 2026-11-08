@@ -1,0 +1,308 @@
+{
+  "files": {
+    "eagle_vtec": {
+      "filename": "Eagle_I_US_2024_with_VTEC_Updated.csv",
+      "path": "D:\\bda_project\\Eagle_I_US_2024_with_VTEC_Updated.csv",
+      "size_bytes": 366933304,
+      "size_mb": 349.93
+    },
+    "nws_warnings": {
+      "filename": "NWS_WARNINGS_COMBINED_data_Updated.csv",
+      "path": "D:\\bda_project\\NWS_WARNINGS_COMBINED_data_Updated.csv",
+      "size_bytes": 832283249,
+      "size_mb": 793.73
+    },
+    "availability": {
+      "filename": "EAGLEI_Source_Record_Availability.csv",
+      "path": "D:\\bda_project\\EAGLEI_Source_Record_Availability.csv",
+      "size_bytes": 32427674,
+      "size_mb": 30.93
+    },
+    "sensitivity": {
+      "filename": "Missing_Data_Sensitivity_Summary.csv",
+      "path": "D:\\bda_project\\Missing_Data_Sensitivity_Summary.csv",
+      "size_bytes": 232,
+      "size_mb": 0.0
+    }
+  },
+  "eagle_vtec": {
+    "total_hourly_rows": 3572394,
+    "total_columns": 16,
+    "unique_counties_fips": 3010,
+    "unique_states": 49,
+    "unique_wfos": 115,
+    "unique_county_events": 1374112,
+    "min_timestamp_utc": "2015-01-02T03:00:00Z",
+    "max_timestamp_utc": "2023-01-03T01:00:00Z",
+    "invalid_timestamps": 0,
+    "duplicate_full_rows": 0,
+    "duplicate_fips_hour_keys": 0,
+    "null_counts": {
+      "fips_code": 0,
+      "Hour": 0,
+      "max_rolling_avg": 0,
+      "state": 0,
+      "county": 0,
+      "median_sum": 0,
+      "new_event_no": 0,
+      "evDur_Hr": 0,
+      "evDur_day": 0,
+      "Max_outage": 0,
+      "source_completeness_pct": 0,
+      "event_mean_completeness_pct": 0,
+      "event_min_completeness_pct": 0,
+      "WFO": 0,
+      "Matched_Events": 0,
+      "Matched_Count": 0
+    },
+    "plausible_value_violations": {
+      "negative_max_rolling_avg": 0,
+      "negative_max_outage": 0,
+      "non_positive_duration_hr": 0,
+      "invalid_completeness_pct": 0,
+      "invalid_fips_code": 0,
+      "non_positive_matched_count": 0
+    },
+    "yearly_coverage": [
+      {
+        "year": 2015,
+        "hourly_rows": 290964,
+        "unique_counties": 2428,
+        "unique_event_ids": 113865,
+        "mean_completeness_pct": 57.67
+      },
+      {
+        "year": 2016,
+        "hourly_rows": 305078,
+        "unique_counties": 2340,
+        "unique_event_ids": 116846,
+        "mean_completeness_pct": 58.57
+      },
+      {
+        "year": 2017,
+        "hourly_rows": 354540,
+        "unique_counties": 2635,
+        "unique_event_ids": 128681,
+        "mean_completeness_pct": 61.13
+      },
+      {
+        "year": 2018,
+        "hourly_rows": 470789,
+        "unique_counties": 2733,
+        "unique_event_ids": 176762,
+        "mean_completeness_pct": 60.33
+      },
+      {
+        "year": 2019,
+        "hourly_rows": 547431,
+        "unique_counties": 2878,
+        "unique_event_ids": 195531,
+        "mean_completeness_pct": 62.98
+      },
+      {
+        "year": 2020,
+        "hourly_rows": 517024,
+        "unique_counties": 2974,
+        "unique_event_ids": 182982,
+        "mean_completeness_pct": 64.04
+      },
+      {
+        "year": 2021,
+        "hourly_rows": 524116,
+        "unique_counties": 2930,
+        "unique_event_ids": 178326,
+        "mean_completeness_pct": 64.82
+      },
+      {
+        "year": 2022,
+        "hourly_rows": 560808,
+        "unique_counties": 2956,
+        "unique_event_ids": 199786,
+        "mean_completeness_pct": 62.61
+      },
+      {
+        "year": 2023,
+        "hourly_rows": 1644,
+        "unique_counties": 116,
+        "unique_event_ids": 397,
+        "mean_completeness_pct": 71.67
+      }
+    ],
+    "completeness_tier_breakdown": [
+      {
+        "completeness_tier": "< 50% Complete",
+        "hourly_rows": 1367604,
+        "share_pct": 38.28,
+        "median_rolling_avg": 0.6875,
+        "median_event_max_outage": 1.75
+      },
+      {
+        "completeness_tier": "100% Complete",
+        "hourly_rows": 1091082,
+        "share_pct": 30.54,
+        "median_rolling_avg": 39.875,
+        "median_event_max_outage": 103.75
+      },
+      {
+        "completeness_tier": "50% - 74% Complete",
+        "hourly_rows": 598245,
+        "share_pct": 16.75,
+        "median_rolling_avg": 3.625,
+        "median_event_max_outage": 7.25
+      },
+      {
+        "completeness_tier": "75% - 99% Complete",
+        "hourly_rows": 515463,
+        "share_pct": 14.43,
+        "median_rolling_avg": 10.375,
+        "median_event_max_outage": 21.25
+      }
+    ]
+  },
+  "availability": {
+    "total_rows": 1048575,
+    "excel_truncation_detected": true,
+    "unique_fips": 288,
+    "min_fips": 1001,
+    "max_fips": 12033,
+    "min_date": "2015-01-01",
+    "max_date": "2024-12-31",
+    "invalid_dates": 0,
+    "duplicate_county_days": 0,
+    "zero_coverage_days_count": 408021,
+    "zero_coverage_days_pct": 38.91,
+    "full_coverage_days_count": 51702,
+    "full_coverage_days_pct": 4.93,
+    "mean_availability_pct": 23.45,
+    "median_availability_pct": 8.33,
+    "null_counts": {
+      "fips_code": 0,
+      "Date": 0,
+      "expected_15min_records": 0,
+      "observed_15min_records": 0,
+      "missing_15min_records": 0,
+      "source_record_availability_pct": 0
+    }
+  },
+  "missing_data_sensitivity": [
+    {
+      "completeness_tier": "100% Complete",
+      "Total_Observations": 27010031,
+      "Median_Abs_Difference": 0.0,
+      "Median_Relative_Difference": 0.0
+    },
+    {
+      "completeness_tier": "75% - 99% Complete",
+      "Total_Observations": 11776430,
+      "Median_Abs_Difference": 1.133928571,
+      "Median_Relative_Difference": 18.75
+    },
+    {
+      "completeness_tier": "50% - 74% Complete",
+      "Total_Observations": 14711002,
+      "Median_Abs_Difference": 2.0,
+      "Median_Relative_Difference": 43.75
+    },
+    {
+      "completeness_tier": "< 50% Complete",
+      "Total_Observations": 38024562,
+      "Median_Abs_Difference": 2.25,
+      "Median_Relative_Difference": 75.0
+    }
+  ],
+  "nws_warnings": {
+    "total_rows": 4152437,
+    "unique_wfos": 125,
+    "unique_phenoms": 59,
+    "gtype_breakdown": [
+      {
+        "GTYPE": "C",
+        "count": 3682148
+      },
+      {
+        "GTYPE": "P",
+        "count": 470289
+      }
+    ],
+    "sig_breakdown": [
+      {
+        "SIG": "W",
+        "count": 1744191
+      },
+      {
+        "SIG": "Y",
+        "count": 1680215
+      },
+      {
+        "SIG": "A",
+        "count": 681204
+      },
+      {
+        "SIG": "S",
+        "count": 46784
+      },
+      {
+        "SIG": "O",
+        "count": 43
+      }
+    ],
+    "emergency_count": 2319,
+    "null_counts": {
+      "WFO": 0,
+      "ISSUED": 0,
+      "EXPIRED": 0,
+      "INIT_ISS": 0,
+      "INIT_EXP": 0,
+      "PHENOM": 0,
+      "GTYPE": 0,
+      "SIG": 0,
+      "ETN": 0,
+      "STATUS": 0,
+      "NWS_UGC": 100752,
+      "AREA_KM2": 0,
+      "UPDATED": 0,
+      "HVTEC_NWSLI": 0,
+      "HVTEC_SEVERITY": 0,
+      "HVTEC_CAUSE": 0,
+      "HVTEC_RECORD": 0,
+      "IS_EMERGENCY": 0,
+      "POLYBEGIN": 834134,
+      "POLYEND": 834134,
+      "WINDTAG": 0,
+      "HAILTAG": 0,
+      "TORNADOTAG": 0,
+      "DAMAGETAG": 0
+    },
+    "empty_or_literal_none_counts": {
+      "NWS_UGC": 470289,
+      "HVTEC_NWSLI": 3341587,
+      "HVTEC_SEVERITY": 3342844,
+      "WINDTAG": 3921985,
+      "HAILTAG": 3895777,
+      "TORNADOTAG": 4108947,
+      "DAMAGETAG": 4137528
+    },
+    "mixed_timestamp_formats_detected": true
+  },
+  "spark_verification": {
+    "spark_version": "4.2.0",
+    "eagle_vtec_spark_summary": {
+      "total_rows": 3572394,
+      "unique_fips": 3010,
+      "unique_states": 49,
+      "unique_wfos": 115,
+      "min_hour": "2015-01-02T03:00:00Z",
+      "max_hour": "2023-01-03T01:00:00Z",
+      "mean_completeness_pct": 62.006332448212596,
+      "mean_rolling_avg_outage": 284.3862280098444,
+      "max_event_outage": 934675.0
+    },
+    "availability_spark_summary": {
+      "total_rows": 1048575,
+      "unique_fips": 288,
+      "mean_availability_pct": 23.450711739265195,
+      "zero_coverage_county_days": 408021
+    },
+    "sensitivity_rows": 4
+  }
+}

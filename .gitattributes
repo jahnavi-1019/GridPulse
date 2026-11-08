@@ -1,0 +1,25 @@
+﻿# Auto-detect text files and perform LF normalization
+* text=auto
+
+# Python, Configs, Markdown, JSON, YAML
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.cff text eol=lf
+
+# Jupyter Notebooks (JSON-based)
+*.ipynb text eol=lf
+
+# Binary Assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.parquet binary
+*.joblib binary
+*.pkl binary
+*.docx binary
+*.pdf binary

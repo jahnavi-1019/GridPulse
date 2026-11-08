@@ -1,0 +1,17 @@
+# Keep large raw datasets and intermediate Spark/Parquet artifacts out of version control
+*.csv
+!outputs/*_comparison.csv
+!outputs/*_breakdown.csv
+!outputs/*_importances.csv
+!outputs/*_metrics.csv
+!outputs/*_variance.csv
+!outputs/*_top3.csv
+!outputs/*_raw.csv
+!outputs/*_zscore.csv
+outputs/*.parquet/
+outputs/*.parquet
+.ipynb_checkpoints/
+__pycache__/
+spark-warehouse/
+derby.log
+metastore_db/

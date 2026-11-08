@@ -1,0 +1,4 @@
+cluster,log_median_baseline,log_mean_hourly_outage,log_p90_peak_outage,log_mean_event_dur_hr,log_total_events,mean_completeness_pct,full_completeness_share,County_Count
+0,3.6669,6.0561,7.7633,3.1996,6.4209,81.3965,0.5755,417
+1,1.6217,3.2566,4.8663,2.3166,4.9857,45.6782,0.1343,1132
+2,2.221,4.5436,6.3563,2.7273,6.0904,58.4845,0.2523,1461

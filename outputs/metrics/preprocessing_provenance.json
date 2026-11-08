@@ -1,0 +1,26 @@
+{
+  "eagle_vtec_provenance": {
+    "initial_rows": 3572394,
+    "invalid_timestamp_rows_dropped": 0,
+    "implausible_rows_dropped": 0,
+    "duplicate_rows_dropped": 0,
+    "final_cleaned_rows": 3572394
+  },
+  "availability_provenance": {
+    "initial_rows": 1048575,
+    "invalid_date_rows_dropped": 0,
+    "duplicate_rows_dropped": 0,
+    "final_cleaned_rows": 1048575
+  },
+  "nws_warnings_provenance": {
+    "initial_nws_rows": 4152437,
+    "valid_year_rows": 4152437,
+    "aggregated_summary_rows": 40368
+  },
+  "parquet_artifacts": {
+    "eagle_vtec_hourly_clean": "D:\\bda_project\\data\\processed\\eagle_vtec_hourly_clean.parquet",
+    "source_availability_clean": "D:\\bda_project\\data\\processed\\source_availability_clean.parquet",
+    "missing_data_sensitivity": "D:\\bda_project\\data\\processed\\missing_data_sensitivity.parquet",
+    "nws_warnings_summary": "D:\\bda_project\\data\\processed\\nws_warnings_summary.parquet"
+  }
+}

@@ -1,0 +1,59 @@
+﻿# ==============================================================================
+# GridPulse — Git Ignore Configuration
+# ==============================================================================
+
+# Raw Big Data CSVs (>1.2GB combined) - Excluded from version control
+*.csv
+!GridPulse_Part1_Team_Evaluation/outputs/*.csv
+
+# Processed and Feature Parquet Tables (Re-creatable via pipeline)
+*.parquet
+*.parquet/
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/features/*
+!data/features/.gitkeep
+
+# Machine Learning Model Weights & Checkpoints
+models/*
+!models/.gitkeep
+*.joblib
+*.pkl
+*.onnx
+
+# Large HTML Report Artifacts (>4MB bundled Plotly.js - can be generated via scripts)
+outputs/figures/*.html
+
+# Apache Spark & Hadoop Scratch Artifacts
+metastore_db/
+spark-warehouse/
+derby.log
+hs_err_pid*
+
+# Python Compilation, Caches & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Operating System & IDE Configurations
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+~$*
+*.tmp

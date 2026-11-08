@@ -1,0 +1,8 @@
+Algorithm,k,Silhouette_SqEuclidean,Log_Likelihood,Min_Cluster_Size,Max_Cluster_Size,Cluster_Sizes,Runtime_s
+Gaussian Mixture (GMM),2,0.4354,-16146.99,873,2137,"[2137, 873]",4.95
+Gaussian Mixture (GMM),3,0.387,-15663.99,451,2026,"[533, 451, 2026]",11.28
+Gaussian Mixture (GMM),4,0.1002,-14699.52,392,1237,"[522, 859, 392, 1237]",10.73
+Gaussian Mixture (GMM),5,0.1287,-14377.01,276,1190,"[276, 320, 367, 1190, 857]",10.5
+Gaussian Mixture (GMM),6,0.1382,-14154.27,296,765,"[704, 299, 765, 296, 633, 313]",9.22
+Gaussian Mixture (GMM),7,0.0581,-14008.93,262,706,"[293, 501, 530, 435, 706, 283, 262]",12.38
+Gaussian Mixture (GMM),8,0.0777,-14007.03,206,970,"[301, 970, 321, 239, 271, 256, 446, 206]",12.39

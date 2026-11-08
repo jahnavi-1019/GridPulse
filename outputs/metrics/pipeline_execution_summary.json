@@ -1,0 +1,198 @@
+{
+  "status": "SUCCESS",
+  "elapsed_seconds": 130.26,
+  "audit_summary": {
+    "total_hourly_rows": 3572394,
+    "total_columns": 16,
+    "unique_counties_fips": 3010,
+    "unique_states": 49,
+    "unique_wfos": 115,
+    "unique_county_events": 1374112,
+    "min_timestamp_utc": "2015-01-02T03:00:00Z",
+    "max_timestamp_utc": "2023-01-03T01:00:00Z",
+    "invalid_timestamps": 0,
+    "duplicate_full_rows": 0,
+    "duplicate_fips_hour_keys": 0,
+    "null_counts": {
+      "fips_code": 0,
+      "Hour": 0,
+      "max_rolling_avg": 0,
+      "state": 0,
+      "county": 0,
+      "median_sum": 0,
+      "new_event_no": 0,
+      "evDur_Hr": 0,
+      "evDur_day": 0,
+      "Max_outage": 0,
+      "source_completeness_pct": 0,
+      "event_mean_completeness_pct": 0,
+      "event_min_completeness_pct": 0,
+      "WFO": 0,
+      "Matched_Events": 0,
+      "Matched_Count": 0
+    },
+    "plausible_value_violations": {
+      "negative_max_rolling_avg": 0,
+      "negative_max_outage": 0,
+      "non_positive_duration_hr": 0,
+      "invalid_completeness_pct": 0,
+      "invalid_fips_code": 0,
+      "non_positive_matched_count": 0
+    },
+    "yearly_coverage": [
+      {
+        "year": 2015,
+        "hourly_rows": 290964,
+        "unique_counties": 2428,
+        "unique_event_ids": 113865,
+        "mean_completeness_pct": 57.67
+      },
+      {
+        "year": 2016,
+        "hourly_rows": 305078,
+        "unique_counties": 2340,
+        "unique_event_ids": 116846,
+        "mean_completeness_pct": 58.57
+      },
+      {
+        "year": 2017,
+        "hourly_rows": 354540,
+        "unique_counties": 2635,
+        "unique_event_ids": 128681,
+        "mean_completeness_pct": 61.13
+      },
+      {
+        "year": 2018,
+        "hourly_rows": 470789,
+        "unique_counties": 2733,
+        "unique_event_ids": 176762,
+        "mean_completeness_pct": 60.33
+      },
+      {
+        "year": 2019,
+        "hourly_rows": 547431,
+        "unique_counties": 2878,
+        "unique_event_ids": 195531,
+        "mean_completeness_pct": 62.98
+      },
+      {
+        "year": 2020,
+        "hourly_rows": 517024,
+        "unique_counties": 2974,
+        "unique_event_ids": 182982,
+        "mean_completeness_pct": 64.04
+      },
+      {
+        "year": 2021,
+        "hourly_rows": 524116,
+        "unique_counties": 2930,
+        "unique_event_ids": 178326,
+        "mean_completeness_pct": 64.82
+      },
+      {
+        "year": 2022,
+        "hourly_rows": 560808,
+        "unique_counties": 2956,
+        "unique_event_ids": 199786,
+        "mean_completeness_pct": 62.61
+      },
+      {
+        "year": 2023,
+        "hourly_rows": 1644,
+        "unique_counties": 116,
+        "unique_event_ids": 397,
+        "mean_completeness_pct": 71.67
+      }
+    ],
+    "completeness_tier_breakdown": [
+      {
+        "completeness_tier": "< 50% Complete",
+        "hourly_rows": 1367604,
+        "share_pct": 38.28,
+        "median_rolling_avg": 0.6875,
+        "median_event_max_outage": 1.75
+      },
+      {
+        "completeness_tier": "100% Complete",
+        "hourly_rows": 1091082,
+        "share_pct": 30.54,
+        "median_rolling_avg": 39.875,
+        "median_event_max_outage": 103.75
+      },
+      {
+        "completeness_tier": "50% - 74% Complete",
+        "hourly_rows": 598245,
+        "share_pct": 16.75,
+        "median_rolling_avg": 3.625,
+        "median_event_max_outage": 7.25
+      },
+      {
+        "completeness_tier": "75% - 99% Complete",
+        "hourly_rows": 515463,
+        "share_pct": 14.43,
+        "median_rolling_avg": 10.375,
+        "median_event_max_outage": 21.25
+      }
+    ]
+  },
+  "preprocessing": {
+    "eagle_vtec_provenance": {
+      "initial_rows": 3572394,
+      "invalid_timestamp_rows_dropped": 0,
+      "implausible_rows_dropped": 0,
+      "duplicate_rows_dropped": 0,
+      "final_cleaned_rows": 3572394
+    },
+    "availability_provenance": {
+      "initial_rows": 1048575,
+      "invalid_date_rows_dropped": 0,
+      "duplicate_rows_dropped": 0,
+      "final_cleaned_rows": 1048575
+    },
+    "nws_warnings_provenance": {
+      "initial_nws_rows": 4152437,
+      "valid_year_rows": 4152437,
+      "aggregated_summary_rows": 40368
+    },
+    "parquet_artifacts": {
+      "eagle_vtec_hourly_clean": "D:\\bda_project\\data\\processed\\eagle_vtec_hourly_clean.parquet",
+      "source_availability_clean": "D:\\bda_project\\data\\processed\\source_availability_clean.parquet",
+      "missing_data_sensitivity": "D:\\bda_project\\data\\processed\\missing_data_sensitivity.parquet",
+      "nws_warnings_summary": "D:\\bda_project\\data\\processed\\nws_warnings_summary.parquet"
+    }
+  },
+  "feature_artifacts": {
+    "event_features": "D:\\bda_project\\data\\features\\event_features.parquet",
+    "county_reliability_profiles": "D:\\bda_project\\data\\features\\county_reliability_profiles.parquet",
+    "state_reliability_profiles": "D:\\bda_project\\data\\features\\state_reliability_profiles.parquet"
+  },
+  "weather_tests": {
+    "h_statistic": 28328.59,
+    "p_value": 0.0,
+    "significant_at_0_001": true,
+    "interpretation": "Statistically significant heterogeneity in peak outage severity across NWS VTEC warning types (rejects null hypothesis of equal severity distributions; observational association only)."
+  },
+  "best_model_test_2022": {
+    "n_samples": 214185,
+    "positive_rate": 0.1282,
+    "threshold": 0.31,
+    "roc_auc": 0.864,
+    "pr_auc": 0.6713,
+    "brier_score": 0.0664,
+    "f1_score": 0.5934,
+    "precision": 0.7464,
+    "recall": 0.4925,
+    "confusion_matrix": {
+      "tn": 182119,
+      "fp": 4597,
+      "fn": 13941,
+      "tp": 13528
+    }
+  },
+  "reports": {
+    "weather_figure": "D:\\bda_project\\outputs\\figures\\weather_severity_associations.html",
+    "trend_figure": "D:\\bda_project\\outputs\\figures\\monthly_outage_episodes_trend.html",
+    "map_figure": "D:\\bda_project\\outputs\\figures\\state_high_severity_choropleth.html",
+    "final_report": "D:\\bda_project\\outputs\\reports\\final_research_results.md"
+  }
+}

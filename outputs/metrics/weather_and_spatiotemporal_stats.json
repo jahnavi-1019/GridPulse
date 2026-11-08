@@ -1,0 +1,33 @@
+{
+  "kruskal_wallis_top10_phenoms": {
+    "h_statistic": 28328.59,
+    "p_value": 0.0,
+    "significant_at_0_001": true,
+    "interpretation": "Statistically significant heterogeneity in peak outage severity across NWS VTEC warning types (rejects null hypothesis of equal severity distributions; observational association only)."
+  },
+  "completeness_rank_robustness": {
+    "spearman_rho": 0.984,
+    "p_value": 2.0581246475768456e-13,
+    "interpretation": "High rank-order consistency in phenomenon high-severity probability between all events and high-coverage (>=75% completeness) events."
+  },
+  "multi_hazard_comparison": [
+    {
+      "initial_is_multi_hazard": 0,
+      "n_events": 1234025,
+      "median_max_outage": 3.19,
+      "mean_max_outage": 156.1,
+      "median_duration_hr": 4.0,
+      "mean_duration_hr": 6.19,
+      "prob_high_severity_ge100_pct": 12.69
+    },
+    {
+      "initial_is_multi_hazard": 1,
+      "n_events": 140087,
+      "median_max_outage": 3.19,
+      "mean_max_outage": 214.58,
+      "median_duration_hr": 2.0,
+      "mean_duration_hr": 6.56,
+      "prob_high_severity_ge100_pct": 14.63
+    }
+  ]
+}

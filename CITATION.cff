@@ -1,0 +1,20 @@
+﻿cff-version: 1.2.0
+message: "If you utilize this pipeline, dataset analysis, or methodology, please cite it as below."
+title: "GridPulse: Research-Grade Power Outage Analytics and Reliability Assessment"
+authors:
+  - family-names: "S M"
+    given-names: "Jahnavi"
+    affiliation: "Amrita Vishwa Vidyapeetham"
+date-released: 2026-11-08
+version: "2.0.0"
+repository-code: "https://github.com/jahnavi-1019/GridPulse"
+keywords:
+  - "big-data-analytics"
+  - "pyspark"
+  - "power-grid-reliability"
+  - "eagle-i"
+  - "nws-vtec"
+  - "weather-hazards"
+  - "machine-learning"
+  - "streamlit"
+license: "MIT"

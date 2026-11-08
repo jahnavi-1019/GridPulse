@@ -1,0 +1,8 @@
+Feature,PC1_Loading,PC2_Loading,PC3_Loading
+mean_completeness_pct,-0.4317,-0.2545,0.0918
+log_mean_hourly_outage,-0.4178,0.3237,-0.1647
+full_completeness_share,-0.4119,-0.404,0.0251
+log_p90_peak_outage,-0.4095,0.3119,-0.1308
+log_median_baseline,-0.379,0.0539,-0.5868
+log_mean_event_dur_hr,-0.3039,-0.4991,0.419
+log_total_events,-0.2564,0.5638,0.6533

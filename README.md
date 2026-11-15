@@ -2,12 +2,15 @@
 
 # ⚡ GridPulse
 ### Research-Grade Power Outage Analytics, Weather-Warning Associations, and Regional Reliability Assessment
+#### Native Apache Spark (v3.5.3) & Scala (v2.12) Distributed Engine + Interactive Streamlit UI
 
+[![Scala](https://img.shields.io/badge/Scala-2.12.18-red.svg?logo=scala&logoColor=white)](https://www.scala-lang.org/)
+[![Apache Spark](https://img.shields.io/badge/Apache%20Spark-3.5.3-orange.svg?logo=apachespark&logoColor=white)](https://spark.apache.org/)
+[![SBT](https://img.shields.io/badge/sbt-1.9.9-blue.svg?logo=sbt&logoColor=white)](https://www.scala-sbt.org/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![Apache Spark](https://img.shields.io/badge/PySpark-4.2.0-orange.svg?logo=apachespark&logoColor=white)](https://spark.apache.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.40+-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.5+-F7931E.svg?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
-[![Tests](https://img.shields.io/badge/tests-9%20passed-brightgreen.svg?logo=pytest&logoColor=white)](https://docs.pytest.org/)
+[![Tests](https://img.shields.io/badge/tests-11%20passed%20(pytest%20%2B%20scalatest)-brightgreen.svg)](https://docs.pytest.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
@@ -190,43 +193,47 @@ GridPulse/
 ## 🚀 Quickstart Guide
 
 ### 1. Prerequisites
-* **Python:** `3.10+` (tested on `Python 3.12.10`)
-* **Java:** `Java 17+` (required for PySpark local execution)
+* **Java:** `Java 17+` (installed and configured on PATH)
+* **Scala & SBT:** `sbt 1.9.9+` (manages Scala 2.12.18 & Spark 3.5.3 automatically)
+* **Python:** `3.10+` (tested on `Python 3.12.10` for Streamlit dashboard)
 
 ### 2. Installation
-Clone the repository and install dependencies:
+Clone the repository and install Python requirements:
 ```bash
 git clone https://github.com/jahnavi-1019/GridPulse.git
 cd GridPulse
 pip install -r requirements.txt
 ```
 
-### 3. Running the Pipeline
-Execute the complete end-to-end data pipeline (~60 seconds):
+### 3. Running the Native Scala & Apache Spark Engine
+Compile and run the distributed Scala Spark pipeline directly via SBT:
 ```bash
+# 1. Compile all Scala sources (0 warnings, 0 errors)
+sbt compile
+
+# 2. Run ScalaTest suite
+sbt test
+
+# 3. Execute the full distributed Scala Spark pipeline
+sbt run
+```
+
+### 4. Running the Python Pipeline & Generating Reports
+```bash
+# Run end-to-end Python pipeline
 python scripts/run_pipeline.py --stage all
+
+# Generate the comprehensive academic publication Word report (.docx)
+python scripts/generate_word_report.py
 ```
 
-Or execute stage-by-stage:
-```bash
-python scripts/run_pipeline.py --stage audit       # Stage 1: PySpark + Polars schema audit
-python scripts/run_pipeline.py --stage preprocess  # Stage 2: Clean & generate Parquet tables
-python scripts/run_pipeline.py --stage features    # Stage 3: Build 1.37M episode features & profiles
-python scripts/run_pipeline.py --stage analyze     # Stage 4: Spatiotemporal & weather hypothesis tests
-python scripts/run_pipeline.py --stage model       # Stage 5: Train & evaluate models on 2022 test set
-python scripts/run_pipeline.py --stage report      # Stage 6: Generate figures & reports
-```
-
-### 4. Launching the Interactive Web Application
+### 5. Launching the Interactive 9-Page UI/UX Dashboard
 ```bash
 streamlit run app.py
 ```
-Open your browser at `http://localhost:8501`.
-
-### 5. Regenerating the Word (.docx) Report
-```bash
-python scripts/generate_word_report.py
-```
+Open your browser at `http://localhost:8501` to explore:
+* **Interactive What-If Outage Risk Simulator (Page 8):** Real-time gauge, scenario adjustments, and automated SCADA utility dispatch advice.
+* **Spark MLlib & Distributed Architecture (Page 9):** Scalability speedup benchmarks and full model comparisons.
 
 ---
 

@@ -123,18 +123,21 @@ class GridPulseConfig:
     major_severity_threshold: float = 500.0
 
     def resolve_raw_file(self, filename: str) -> Path:
-        """Locate a raw file in data/raw first, then project_root without moving original files."""
+        """Locate a raw file in data/raw first, then project_root, then D:/bda_project without moving original files."""
         env_override = os.environ.get(f"GRIDPULSE_FILE_{filename.split('.')[0].upper()}")
         if env_override and Path(env_override).exists():
             return Path(env_override)
-        in_raw = self.project_root / "data" / "raw" / filename
-        if in_raw.exists():
-            return in_raw
-        in_root = self.project_root / filename
-        if in_root.exists():
-            return in_root
+        candidates = [
+            self.project_root / "data" / "raw" / filename,
+            self.project_root / filename,
+            Path("D:/bda_project") / filename,
+            Path("D:/bda_project/data/raw") / filename,
+        ]
+        for c in candidates:
+            if c.exists():
+                return c
         raise FileNotFoundError(
-            f"Required source file '{filename}' not found in '{in_raw}' or '{in_root}'. "
+            f"Required source file '{filename}' not found in candidates: {candidates}. "
             "Configure GRIDPULSE_ROOT or place the dataset in the workspace root."
         )
 

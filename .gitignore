@@ -32,6 +32,14 @@ spark-warehouse/
 derby.log
 hs_err_pid*
 
+# Scala & SBT Compilation Artifacts
+target/
+project/target/
+project/project/
+.bsp/
+.bloop/
+*.class
+
 # Python Compilation, Caches & Environments
 __pycache__/
 *.py[cod]

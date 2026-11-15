@@ -18,6 +18,17 @@ def get_config() -> GridPulseConfig:
     return GridPulseConfig()
 
 
+@st.cache_resource
+def load_inference_pipeline():
+    """Load the trained and calibrated HistGradientBoosting model pipeline for live interactive inference."""
+    import joblib
+    cfg = get_config()
+    model_path = cfg.models_dir / "hist_gradient_boosting_onset.joblib"
+    if not model_path.exists():
+        return None
+    return joblib.load(model_path)
+
+
 @st.cache_data(ttl=3600)
 def load_json_metrics(filename: str) -> Dict[str, Any]:
     cfg = get_config()
